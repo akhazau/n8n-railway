@@ -16,4 +16,4 @@ EXPOSE 5678
 
 ENV N8N_USER_ID=root
 
-CMD ["n8n", "start"]
+CMD ["n8n"]
