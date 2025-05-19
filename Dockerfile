@@ -12,8 +12,9 @@ RUN apk --update add --virtual build-dependencies python3 build-base && \
 
 WORKDIR /data
 
+ENV N8N_USER_ID=root
+ENV PORT=5678
+
 EXPOSE 5678
 
-ENV N8N_USER_ID=root
-
-CMD ["n8n"]
+CMD ["n8n", "start"]
